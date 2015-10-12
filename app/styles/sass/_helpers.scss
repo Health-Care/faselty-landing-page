@@ -1,0 +1,21 @@
+//
+// helper Classes
+//
+
+.bare-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hide           { display: none; }
+.text-center    { text-align: center; }
+.text-success   { color: #1ABC9C; }
+.text-danger    { color: $brand-color; }
+
+.gray-bg { background-color: #EEEEEE; }
+
+.margin-bottom-one    { margin-bottom: 1rem; }
+.margin-bottom-two    { margin-bottom: 2rem; }
+.margin-bottom-three  { margin-bottom: 3rem; }
+.margin-bottom-none   { margin-bottom: 0; }

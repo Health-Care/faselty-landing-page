@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  line-height: 2;
+  color: #043D5D;
+  text-align: right;
+  direction: rtl;
+  font-family: 'Droid Arabic Kufi', Helvetica, Arial, 'sans serif';
+}
+
+//
+//  Default Link Styles
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+  line-height: inherit;
+
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
+}
+
+//
+// General
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+//
+// Sections
+//
+
+.header {
+  background-color: $brand-color;
+  padding: 4em 0;
+}
+
+.logo {
+  margin-bottom: 3rem;
+  display: inline-block;
+  background-image: url("http://beta.faselty.me/assets/logo-4355e6e5b747638459590ef57207b0ad.png");
+  text-indent: -9999px;
+  width: 150px;
+  background-size: cover;
+  height: 57px;
+}
+
+.header-content {
+  color: #fff;
+  position: relative;
+}
+
+.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #f2f2f2;
+
+  @media screen and (min-width: 64em) {
+    padding: 6rem 0;
+  }
+}
+
+// Features
+.feature-icon-svg {
+  width: 100px;
+  fill: $brand-color;
+}
