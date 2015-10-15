@@ -64,6 +64,14 @@ gulp.task('images', function () {
 });
 
 
+// Copy Fonts
+
+gulp.task('copy:fonts', function() {
+  return gulp.src('./app/font/**/*')
+    .pipe(gulp.dest('./build/font'));
+});
+
+
 // Watch Files & Reload
 
 gulp.task('serve', function() {
@@ -88,7 +96,7 @@ gulp.task('clean', function() {
 // Build
 
 gulp.task('build', ['clean'], function() {
-  runSequence('haml', 'sass', 'images', 'js');
+  runSequence('haml', 'sass', 'images', 'js', 'copy:fonts');
 });
 
 

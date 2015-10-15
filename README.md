@@ -14,7 +14,7 @@ npm install
 
 ##### Build
 
-This will build all the files to the build directory
+This will build all the files to the `/build` directory, this directory contains the final files to be pushed to the server.
 
 ```
 gulp build
@@ -28,9 +28,17 @@ This will start the development mode and initialize a [localhost:3000] server to
 gulp serve
 ```
 
-Icons used from [thenounproject.com](https://thenounproject.com/)
+#### Icons
+Icons generated from [fontello] and could be used as:
+
+``` haml
+%i{class: "icon-facebook"}
+%i{class: "icon-twitter"}
+%i{class: "icon-pinterest"}
+```
 
 [Gulp]:http://gulpjs.com/
 [node.js]:https://nodejs.org/
 [npm]:https://www.npmjs.com/
-[localhost:3000]:http://localhost:5000/
+[localhost:3000]:http://localhost:3000/
+[fontello]: http://fontello.com/

@@ -40,7 +40,6 @@ img {
 
 //
 // Sections
-//
 
 .header {
   background-color: $brand-color;
@@ -50,7 +49,7 @@ img {
 .logo {
   margin-bottom: 3rem;
   display: inline-block;
-  background-image: url("http://beta.faselty.me/assets/logo-4355e6e5b747638459590ef57207b0ad.png");
+  background-image: url('../images/logo.png');
   text-indent: -9999px;
   width: 150px;
   background-size: cover;
@@ -71,8 +70,28 @@ img {
   }
 }
 
+.section-medium { padding: 2rem 0; }
+
+//
 // Features
+
 .feature-icon-svg {
   width: 100px;
   fill: $brand-color;
 }
+
+// Remove the default paragraph bottom margin in medium and up screens
+@media only screen and (min-width: 40em) {
+  .feature-desc {
+    margin-bottom: 0;
+  }
+}
+
+//
+// Social Icons
+
+.social-icons li { display: inline-block; }
+.social-icon { font-size: 1.5rem; }
+
+.social-icon.facebook:hover { color: #3A5795; }
+.social-icon.twitter:hover { color: #55ACEE; }
