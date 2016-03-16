@@ -3,10 +3,9 @@
   %head
     %meta{charset: "utf-8"}
     %title فصيلتي
-    %meta{name: "description", content: "فصيلتي هي شبكة وحل لعملية التبرع بالدم"}
+    %meta{name: "description", content: "فصيلتي حل لعملية التبرع بالدم بمصر"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300", rel: "stylesheet"}
-    %link{rel: "stylesheet", href: "styles/main.min.css"}
+    %link{rel: "stylesheet", href: "styles/main.css"}
     %link{href: "images/favicon.ico", rel: "shortcut icon"}
 
   %body
@@ -16,70 +15,85 @@
         .large-12.column
           .header-content
             %h1.logo.header-title فصيلتي
-            %h4.margin-bottom-none فصيلتي هي شبكة وحل لعملية التبرع بالدم
+            %h4.margin-bottom-none فصيلتي حل لعملية التبرع بالدم بمصر
 
     .section
       .row
-        .medium-8.large-8.column.column--center
-          %h4.margin-bottom-three.text-center.hide فصيلتي عبارة عن شبكة تساعدك على
+        .column.large-8.column--center
+          .row
+            .medium-4.large-6.column.text-center
+              %p.feature-desc
+                تقدم فصيلتي خدماتها للمتبرعين بالدم ولطالبي الدم
 
-      .row
-        .medium-4.large-4.column.text-center
-          %p.feature-desc
-            تقدم فصيلتي خدماتها للمتبرعين بالدم ولطالبي الدم
-
-        .medium-4.large-4.column.text-center
-          %p.feature-desc
-            تتعاون فصيلتي مع مراكز الدم والمستشفيات لتطوير وتحسين عملية التبرع بالدم
-
-        .medium-4.large-4.column.text-center
-          %p.feature-desc
-            تتعاون  فصيلتي مع الأنشطة الطلابية والجمعيات لتنظيم البيانات
+            .medium-4.large-6.column.text-center
+              %p.feature-desc
+                تتعاون  فصيلتي مع الأنشطة الطلابية والجمعيات لتنظيم البيانات
 
     .section
       .row
         .column.large-8.column--center
           %p
-            مشروع فصيلتي لتحسين وتطوير عملية التبرع بالدم على مستوى الأفراد والمؤسسات التنموية غير الربحية.
+            %strong
+              خدماتنا للأفراد
+          %p
+              موقع إلكتروني وتطبيق هاتف لتوصيل المتبرع بالمريض أو طالب الدم بسهولة وفي أقل وقت معتمدًا على المكان الجغرافي وفصيلة الدم لكل من المريض والمتبرع.
 
           %p
-            باستخدام تكنولوجيا المعلومات والاتصالات، تعمل فصيلتي على تخفيف العبء عن طالبي التبرع بالدم وتسهيل عملية البحث عن متبرعين جدد.
+            %strong
+              خدماتنا للمؤسسات (المستشفيات وبنوك الدم)
+          %p
+            تنظيم قواعد بيانات متبرعي الدم، تحليل احتياج الدم لكل مؤسسة تبعا لعدد العمليات التي يتم إجراؤها.
 
           %p
-            كما أنها تنشيء عبر أنشطتها وخداماتها قاعدة بيانات من المتبرعين المؤمنين بأهمية التبرع الدوري بالدم والالتزام بتخفيف معاناة المرضى وذويهم في الحصول على الدم.
+            %strong
+              هدفنا
 
           %p.margin-bottom-none
-             منظومة فصيلتي تبدأ بالأفراد ولكنها تمتد لتفعيل شراكات مجتمعية مع مؤسسات غير ربحية وتنموية ومجموعات طلابية يجتمعوا كلهم مع فصيلتي في هدف التخفيف عن المرضى بتحسين عملية التبرع بالدم.
+            بناء قاعدة بيانات للمتبرعين بالدم المؤمنين بأهمية التبرع الدوري بالدم بالتعاون مع الأنشطة الطلابية والجمعيات غير الهادفة للربح من خلال شراكات مجتمعية لتخفيف معاناة المرضى وذويهم في الحصول على الدم.
 
     .section.gray-bg
       .row
         .column.large-8.column--center
           %p.text-center.margin-bottom-two
-            انضم إلى فصيلتي لتعرف أكثر وتصبح عضواً مفيداً ومطوراً لمجتمعك بأقل المجهود
+            شارك مع فصيلتي لتساهم في إنقاذ حياة إنسان
 
         .column.large-6.column--center
 
           #mc_embed_signup
-            %form#mc-embedded-subscribe-form.validate{action: "//faselty.us8.list-manage.com/subscribe/post?u=31a1bbb44a5379590cf2675cb&amp;id=3fa0aaa624", method: "post", name: "mc-embedded-subscribe-form",novalidate: "", target: "_blank"}
+            %form#mc-embedded-subscribe-form.validate{action: "//faselty.us8.list-manage.com/subscribe/post?u=31a1bbb44a5379590cf2675cb&amp;id=4df95c7f56", method: "post", name: "mc-embedded-subscribe-form",novalidate: "", target: "_blank"}
+
               #mc_embed_signup_scroll
+
+                .mc-field-group
+                  %label.hide{for: "mce-FNAME"}
+                    الاسم الأول
+                  %input#mce-FNAME.form-control.margin-bottom-one{name: "FNAME", type: "text", value: "", placeholder: "الاسم الأول"}
+
+                .mc-field-group
+                  %label.hide{for: "mce-LNAME"}
+                    الاسم الأول
+                  %input#mce-LNAME.form-control.margin-bottom-one{name: "LNAME", type: "text", value: "", placeholder: "الاسم الأخير"}
+
                 .mc-field-group
                   %label.hide{for: "mce-EMAIL"}
                     البريد الإلكتروني
                     %span.asterisk *
-                  %input#mce-EMAIL.required.email.form-control.margin-bottom-one{name: "EMAIL", type: "email", value: "",placeholder: "البريد الإلكتروني",}
+                  %input#mce-EMAIL.required.email.form-control.margin-bottom-one{name: "EMAIL", type: "email", value: "",placeholder: "البريد الإلكتروني *"}
+
                 .mc-field-group.size1of2
                   %label.hide{for: "mce-MMERGE2"}
                     رقم الهاتف
                     %span.asterisk *
-                  %input#mce-MMERGE2.required.form-control.margin-bottom-one{name: "MMERGE2", type: "text", value: "", placeholder: "رقم الهاتف",}
+                  %input#mce-MMERGE2.required.form-control.margin-bottom-one{name: "MMERGE3", type: "text", value: "", placeholder: "رقم الهاتف *"}
+
                 #mce-responses.clear
                   #mce-error-response.response.margin-bottom-one{style: "display:none"}
                   #mce-success-response.response.margin-bottom-one{style: "display:none"}
                 / real people should not fill this in and expect good things - do not remove this or risk form bot signups
                 %div.hide
-                  %input{name: "b_31a1bbb44a5379590cf2675cb_3fa0aaa624", tabindex: "-1", type: "text", value: ""}
+                  %input{name: "b_31a1bbb44a5379590cf2675cb_4df95c7f56", tabindex: "-1", type: "text", value: ""}
                 .clear
-                  %input#mc-embedded-subscribe.button.expand{name: "subscribe", type: "submit", value: "انضم"}
+                  %input#mc-embedded-subscribe.button.expand{name: "subscribe", type: "submit", value: "شارك"}
 
     .section-medium
       .row

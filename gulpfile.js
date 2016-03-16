@@ -8,14 +8,12 @@ var watch        = require('gulp-watch');
 var haml         = require('gulp-haml');
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
-var minifycss    = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync');
 var runSequence  = require('run-sequence');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var concat       = require('gulp-concat');
-var rename       = require('gulp-rename');
 var reload       = browserSync.reload;
 
 
@@ -34,8 +32,6 @@ gulp.task('sass', function () {
   return gulp.src('./app/styles/*.scss')
   .pipe(sass())
   .pipe(autoprefixer())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(minifycss())
   .pipe(gulp.dest('./build/styles'));
 });
 
